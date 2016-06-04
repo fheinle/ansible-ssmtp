@@ -1,0 +1,7 @@
+---
+
+smtp_port: 587
+smtp_use_tls: "yes"
+smtp_local_hostname: "{{ ansible_fqdn }}"
+smtp_from_override: NO
+smtp_rewrite_domain: "{{ smtp_user.split('@')[0] }}"

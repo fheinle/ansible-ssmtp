@@ -1,0 +1,9 @@
+# {{ ansible_managed }}
+
+root={{ smtp_root_user }}
+mailhub={{ smtp_server }}:{{ smtp_port }}
+hostname={{ smtp_local_hostname }}
+rewriteDomain={{ smtp_rewrite_domain }}
+AuthUser={{ smtp_user }}
+AuthPass={{ smtp_password }}
+UseSTARTTLS={{ smtp_use_tls }}
