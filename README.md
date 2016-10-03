@@ -24,3 +24,13 @@ Defaults that may be overriden:
     smtp_use_tls: "yes"
     smtp_local_hostname: "{{ ansible_fqdn }}"
     smtp_rewrite_domain "{{ smtp_user.split('@')[0] }}"
+
+## Build
+
+[![Build Status](https://travis-ci.org/fheinle/ansible-ssmtp.svg?branch=master)](https://travis-ci.org/fheinle/ansible-ssmtp)
+
+## Copyright
+
+Copyright (c) 2016 Florian Heinle <launchpad@planet-tiax.de>
+
+MIT License
