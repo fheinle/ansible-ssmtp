@@ -7,6 +7,8 @@ before_install:
   - sudo apt-get update -qq
   # just for testing
   - sudo useradd ansible
+  - mkdir vars
+  - cp tests/bogussettings.yml vars/main.yml
 
 install:
   # Install Ansible.

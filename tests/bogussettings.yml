@@ -1,0 +1,7 @@
+---
+
+smtp_root_user: root@bogus.invalid
+smtp_server: bogus.invalid
+smtp_user: bogus@invalid
+smtp_password: invalid
+smtp_rewrite_domain: bogus.invalid
