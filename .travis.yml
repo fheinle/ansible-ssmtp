@@ -6,7 +6,7 @@ python: "2.7"
 before_install:
   - sudo apt-get update -qq
   # just for testing
-  - sudo adduser ansible
+  - sudo useradd ansible
 
 install:
   # Install Ansible.
