@@ -9,6 +9,7 @@ before_install:
   - sudo useradd ansible
   - mkdir vars
   - cp tests/bogussettings.yml vars/main.yml
+  - chmod +x tests/perm.sh
 
 install:
   # Install Ansible.
@@ -37,7 +38,7 @@ script:
 
   - "groups ansible|grep -q mail-user"
   - test -x /usr/sbin/sendmail
-  - "grep mail-user /etc/ssmtp/ssmtp.conf"
+  - ./tests/perm.sh
 
 notifications:
   slack: suedseite:y3ypqbTi5Mhr8YGSw5ccVLa2
